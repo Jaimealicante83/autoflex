@@ -1,0 +1,43 @@
+@import '../styles/general.scss';
+
+.nav{
+    height: 6rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 5rem;
+    padding: 2rem 0;
+    &.nav-salmon {
+        height: 9rem;
+        background-color: $orange; 
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        height: 5rem;
+
+        .logo{
+            img{
+                height: 4rem;
+                width: auto;
+            }
+        }
+        .nav-wrapper{
+            ul{
+                display: flex;
+                gap: 5rem;
+                list-style: none;
+                li{
+                    font-size: 1.6rem;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

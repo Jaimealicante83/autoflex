@@ -1,0 +1,67 @@
+.flota {
+
+  padding: 2rem 0 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 2.65fr; /* Texto ocupa menos espacio que las imágenes */
+    grid-template-rows: auto auto; /* Dos filas: texto y Mercedes */
+    gap: 2rem; /* Espacio entre elementos */
+    grid-template-areas:
+      "text images"
+      "mercedes images";
+    margin-bottom: 12.5rem;
+
+    /* Área de texto */
+    .wrapper-text {
+      grid-area: text;
+      .container-text{
+        padding-right: 7%;
+        h6 {
+          font-size: 1.4rem;
+          letter-spacing: .1rem;
+          text-transform: uppercase;
+          color: #f15a24;
+          margin-bottom: 1rem;
+        }
+        h2 {
+          padding-right: 8%;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 1.8;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    /* Imagen del Mercedes */
+    .image-mercedes {
+      grid-area: mercedes;
+      width: 100%;
+      height: 37%;
+      border-radius: 0.5rem;
+      margin-top: 5.35rem;
+    }
+
+    /* Cuadrícula de imágenes */
+    .image-grid-container{
+      display: flex;
+      gap: 2rem;
+      .image-grid {
+        grid-area: images;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+ 
+  }
+}

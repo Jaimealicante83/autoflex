@@ -1,0 +1,9 @@
+@import '../styles/general.scss';
+
+.posts{
+    .container{
+        display: flex;
+        justify-content:space-between;
+        gap: 1%;
+    }
+}

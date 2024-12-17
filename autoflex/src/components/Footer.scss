@@ -1,0 +1,113 @@
+@import '../styles/general.scss';
+
+.footer {
+  background-color: $orange; // Background color
+  color: $white;
+
+  .container {
+    display: flex;
+    gap: 4%; // Adjust gap to maintain spacing
+    padding: 6rem 0;
+    margin-bottom: 0;
+
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+
+      h3, p, ul, li {
+        color: $white;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 1.6rem;
+          margin-bottom: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-brand {
+      flex: 2; // Fixed width for the brand section
+      margin-right: 7%;
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2.4;
+        margin: 1rem 0;
+      }
+
+      .footer-logo {
+        height: auto;
+        width: 20rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-social {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        a{
+          cursor: pointer;
+          img{
+            height: 3rem;
+            width: auto;
+          }
+        }
+      }
+    }
+
+    // Central columns occupy flex: 1
+    .footer-section:nth-child(2), 
+    .footer-section:nth-child(3) {
+      flex: 1; 
+    }
+
+    // Last column grows more with flex: 2
+    .footer-contact {
+      flex: 1.5;
+
+      .contact-input {
+        display: flex;
+        align-items: center;
+
+        input {
+          padding: 1.5rem;
+          border: none;
+          border-radius: 5px 0 0 5px;
+          width: 100%;
+          outline: none;
+        }
+
+        button {
+          background-color: $orange;
+          color: $orange;
+          border: none;
+          padding: 1rem 1rem;
+          border-radius: .5rem;
+          margin-left: -4rem;
+          cursor: pointer;
+
+          span {
+            font-weight: bold;
+            img{
+                height: 1.2rem;
+                width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

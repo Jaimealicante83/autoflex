@@ -1,0 +1,107 @@
+@import '../styles/general.scss';
+.reserva{
+    margin-top: 15rem;
+    .container{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        .car-details{
+            display: flex;
+            gap: 9rem;
+            img{
+                width: 100%;
+            }
+            .description-wrapper{
+                max-width: 35rem;
+                h2{
+                    font-size: 5rem;
+                    line-height: 5.6rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+.reservation-form {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+    margin: 0 auto;
+  
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+  
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #3b3b3b;
+      }
+  
+      input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1.4rem;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      background-color: $orange;
+      color: $white;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: $darkorange;
+      }
+      &.btn-disabled {
+        background-color: #dec194;
+        color: #a0a0a0;
+        padding: 1rem 2rem;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+  .success-message{
+    text-align: center;
+    min-height: 40rem;
+    img{
+        width: 50%;
+        margin: 0 auto 1rem;
+        border-radius: 1.5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    p{
+       margin-bottom: 4rem; 
+    }
+  }
+ 
+  .coches-disponibles{
+    margin-bottom: 8rem;
+  }
+  
+.footer{
+    .container{
+        margin-bottom: 0;
+    }
+}

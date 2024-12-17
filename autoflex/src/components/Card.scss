@@ -1,0 +1,55 @@
+@import '../styles/general.scss';
+.card{
+    display: grid;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    .disponible{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    img{
+        width: 100%;
+    }
+    .name-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        h3{
+            font-size: 2.5rem;
+            color: $black-text;
+        }
+
+        .price{
+            color: orange;
+        }
+    }
+
+    .parrafo-descripcion{
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 2rem;
+        margin-bottom: .5rem;
+        color: rgb(44, 44, 44);
+    }
+
+    .precio-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        align-self: flex-end;
+        .precio{
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            color: $black-text;
+        }
+    }
+   
+    p{
+        color: $black-text;
+    }
+}
