@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experiencia.scss';
+import { Link } from "react-router-dom";
 
 const Experiencia = (props) => {
     return (
@@ -10,7 +11,7 @@ const Experiencia = (props) => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis purus eu fringilla finibus.
                         Aliquam at mauris aliquam, vestibulum mi id, dignissim lacus. Phasellus sit amet elit eget mauris  
                         dignissim lacus. Phasellus sit amet elit eget mauris </p>
-                    <button className="btn btn-orange">Reserva ahora</button>
+                    <Link to="/reserva"><button className="btn btn-orange">Reserva ahora</button></Link>
                 </div>
                 <div className="imagen-card-wrapper">
                     <img src={props.fotoCoche} alt={props.descripcionFotoCoche} />
