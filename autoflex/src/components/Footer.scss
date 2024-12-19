@@ -9,6 +9,14 @@
     gap: 4%; // Adjust gap to maintain spacing
     padding: 6rem 0;
     margin-bottom: 0;
+    @media screen and (max-width: 992px){
+      flex-direction: column;
+      padding: 6rem 2rem;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 1440px){
+      padding: 6rem 5rem;
+    }
 
     .footer-section {
       display: flex;
@@ -32,6 +40,8 @@
         li {
           font-size: 1.6rem;
           margin-bottom: 1.5rem;
+          color: $white;
+          text-decoration: none;
           cursor: pointer;
         }
       }
@@ -40,6 +50,10 @@
     .footer-brand {
       flex: 2; // Fixed width for the brand section
       margin-right: 7%;
+      @media screen and (max-width: 992px){
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
 
       p {
         font-size: 1.6rem;

@@ -1,20 +1,39 @@
 @import '../styles/general.scss';
-.coches-disponibles{
 
-    .container{
-        h2{
-            margin-bottom: 3rem;
-        }
-        .cards-container{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-            gap: 2rem;
-        }
-        .card{
-            width: 23%;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra elegante */
-        }
+.coches-disponibles {
+  .container {
+    h2 {
+      margin-bottom: 3rem;
     }
+
+    .cards-container {
+      display: grid; /* Usamos Grid para controlar las columnas */
+      grid-template-columns: repeat(1, 1fr); /* 1 card por fila inicialmente */
+      gap: 2rem; /* Espaciado entre las cards */
+
+      /* Media queries para ajustar el número de columnas */
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards por fila */
+      }
+      @media screen and (min-width: 993px) {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
+      }
+      @media screen and (min-width: 1220px) {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards por fila */
+      }
+    }
+
+    .card {
+      width: 100%; /* El ancho de cada card se adapta a la columna de Grid */
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+      border-radius: 0.5rem; /* Bordes redondeados */
+      overflow: hidden; /* Asegura que el contenido no se desborde */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05); /* Efecto de hover */
+        box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+      }
+    }
+  }
 }

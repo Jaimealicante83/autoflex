@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Post.scss';
 
 const Post = (props) => {
@@ -7,10 +8,10 @@ const Post = (props) => {
             <img src={props.image} alt={props.altDesc} />
             <h3>{props.title}</h3>
             <p>{props.content}</p>
-            <div className="vermas-wrapper">
+            <Link to="/blog" style={{ textDecoration: "none", color: "inherit" }}><div className="vermas-wrapper">
                 <a>Ver más</a>
                 <img src="/arrow-right.png" alt="Flecha a la derecha" />
-            </div>
+            </div> </Link>
         </div>
     );
 };

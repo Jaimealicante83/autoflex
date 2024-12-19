@@ -4,9 +4,17 @@
     .container{
         margin-top: 6rem;
         margin-bottom: 3rem;
+        @media screen and (max-width: 992px){
+          margin-bottom: 0;
+        }
         .car-details{
             display: flex;
+            flex-direction: row;
             gap: 9rem;
+            @media screen and (max-width: 992px){
+              flex-direction: column;
+              gap: 3rem;
+            }
             img{
                 width: 100%;
             }
@@ -83,16 +91,28 @@
   .success-message{
     text-align: center;
     min-height: 40rem;
+    @media screen and (max-width: 992px){
+      min-height: 35rem;
+    }
     img{
         width: 50%;
         margin: 0 auto 1rem;
         border-radius: 1.5rem;
+        @media screen and (max-width: 992px){
+          width: 100%;
+        }
     }
     h2{
         font-size: 3rem;
+        line-height: 3.2rem;
+        margin-bottom: 2rem;
     }
     p{
+      font-size: 1.6rem;
        margin-bottom: 4rem; 
+       @media screen and (max-width: 992px){
+          margin-bottom: 0;
+       }
     }
   }
  

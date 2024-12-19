@@ -5,5 +5,8 @@
         display: flex;
         justify-content:space-between;
         gap: 1%;
+        @media screen and (max-width: 992px){
+            flex-direction: column;
+        }
     }
 }

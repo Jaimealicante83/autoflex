@@ -2,6 +2,10 @@
 
 .banner {
   .container {
+    @media screen and (max-width: 992px) {
+      margin-bottom: 5rem;
+    }
+
     .wrapper-banner {
       position: relative; // Necesario para el overlay
       display: flex;
@@ -11,6 +15,11 @@
       background-image: url('../../public/banner.jpg');
       background-size: cover;
       background-position: center;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        padding: 6rem 4rem;
+      }
 
       // Overlay
       &::before {
@@ -34,12 +43,16 @@
         }
 
         ul {
-            margin-left:4rem;
+          margin-left: 4rem;
+
+          @media screen and (max-width: 992px) {
+            margin-left: 1.5rem;
+          }
+
           li {
             font-size: 1.8rem;
             color: $white;
             margin-bottom: 1rem;
-            
           }
         }
       }
@@ -52,12 +65,14 @@
         margin-top: 5rem; // Espacio entre el texto y el formulario
         width: auto; // Ajusta según necesidad
         z-index: 1; // Coloca el formulario por encima del overlay
-        .mini-titulo{
-            font-size: 1.4rem;
-            color: $white;
-            align-self: flex-start;
-            margin-bottom: 1rem;
+
+        .mini-titulo {
+          font-size: 1.4rem;
+          color: $white;
+          align-self: flex-start;
+          margin-bottom: 1rem;
         }
+
         .email-input {
           width: 100%;
           padding: 12px 90px 12px 10px; // Espacio para el botón
@@ -87,8 +102,25 @@
           font-weight: bold;
           transition: background-color 0.3s ease;
 
+          @media screen and (max-width: 992px) {
+            margin-top: 1.7rem;
+          }
+
           &:hover {
             background-color: #e04030;
+          }
+        }
+
+        // Mensaje de éxito
+        .success-message {
+          margin-top: 1rem;
+          color: #8bffa6; // Verde para indicar éxito
+          font-size: 1.4rem;
+          font-weight: bold;
+          position: absolute;
+          top: 70px;
+          @media screen and (max-width: 992px) {
+            font-size: 1.2rem;
           }
         }
       }

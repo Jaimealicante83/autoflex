@@ -3,7 +3,7 @@ const postsBlog = [
       id: 1,
       title: "Cinco rutas por Castilla la Mancha que no te puedes perder",
       image: "/audi-azul.jpg",
-      preview: "Descubre las mejores rutas en coche por Castilla-La Mancha...",
+      preview: "Descubre las mejores rutas en coche por Castilla-La Mancha, una región llena de historia, paisajes únicos y pueblos con encanto que te transportarán a otro tiempo. Recorre sus carreteras, explora castillos medievales, disfruta de la rica gastronomía manchega y déjate sorprender por sus tradiciones. Prepara tu coche, planifica tu ruta y vive una experiencia inolvidable en el corazón de España.",
       content: `
       
       <h4>1. La Ruta de Don Quijote</h4>
@@ -79,10 +79,10 @@ const postsBlog = [
         ¡Empieza a planificar tu viaje ahora y vive una experiencia inolvidable!
       </p>
        <article>
-          <img src="/arnau.jpg" alt="Blogger de viajes" />
+          <img src="/ana.jpg" alt="Blogger de viajes" />
           <aside>
-              <p className="nombre-blogger">Arnau Muntaner</p>
-              <p className="descripcion-blogger">Experto en automoción.</p>
+              <p className="nombre-blogger">Ana Zaragoza</p>
+              <p className="descripcion-blogger">Jefa de Redacción</p>
           </aside>
         </article>
     </div>
@@ -92,10 +92,9 @@ const postsBlog = [
       id: 2,
       title: "Que maletero necesito",
       image: "/maletero.jpg",
-      preview: "En muchas ocasiones no estamos segurode que coche alquilar para que quepa todo nuestro equipaje perfectamente, a continuacion te explicamos como elegir el mejor modelo.",
+      preview: "En muchas ocasiones, al planificar un viaje o una escapada, surge la duda de qué coche alquilar para asegurarnos de que todo nuestro equipaje quepa sin problemas y podamos viajar con total comodidad. Elegir el modelo adecuado puede marcar la diferencia entre un trayecto incómodo y una experiencia fluida y placentera.",
       content: `
-       <h4>2. Tipos de Vehículos y su Capacidad de Equipaje</h4>
-        <p><strong>Duración:</strong> 1 día de comparación</p>
+       <h4>1. Tipos de Vehículos y su Capacidad de Equipaje</h4>
         <p><strong>Punto destacado:</strong> Comparativa de modelos</p>
         <p>
           Guía completa sobre la capacidad de equipaje en diferentes categorías de vehículos.
@@ -109,8 +108,7 @@ const postsBlog = [
           <strong>Tip AutoFlex:</strong> Considera un vehículo un nivel por encima de tu primera estimación.
         </p>
 
-        <h4>3. Estrategias de Empaque y Selección de Vehículo</h4>
-        <p><strong>Duración:</strong> 2 días de preparación</p>
+        <h4>2. Estrategias de Empaque y Selección de Vehículo</h4>
         <p><strong>Puntos destacados:</strong> Técnicas de empaque, modelos recomendados</p>
         <p>
           Consejos profesionales para maximizar el espacio y elegir el vehículo perfecto.
@@ -124,10 +122,8 @@ const postsBlog = [
           <strong>Tip AutoFlex:</strong> Pregunta siempre por la capacidad específica del maletero.
         </p>
 
-        <h4>4. Casos Especiales de Equipaje</h4>
-        <p><strong>Duración:</strong> 1 día de planificación</p>
-        <p>
-          Soluciones para equipajes especiales o voluminosos.
+        <h4>3. Casos Especiales de Equipaje</h4>
+          <p><strong>Soluciones para equipajes especiales o voluminosos.</p></strong>
         </p>
         <ul>
           <li>Equipaje de golf: Busca vehículos con maleteros amplios o portaequipajes.</li>
@@ -135,8 +131,7 @@ const postsBlog = [
           <li>Equipos deportivos: SUV o familiares con capacidad de carga adicional.</li>
         </ul>
 
-        <h4>5. Consejos Finales de Alquiler</h4>
-        <p><strong>Duración:</strong> 1 día de preparación</p>
+        <h4>4. Consejos Finales de Alquiler</h4>
         <p>
           Recomendaciones últimas para un alquiler sin sorpresas.
         </p>
@@ -157,7 +152,7 @@ const postsBlog = [
           <img src="/arnau.jpg" alt="Blogger de viajes" />
           <aside>
               <p className="nombre-blogger">Arnau Muntaner</p>
-              <p className="descripcion-blogger">Experto en automoción.</p>
+              <p className="descripcion-blogger">Experto en automoción</p>
           </aside>
         </article>
       </div>
@@ -167,10 +162,9 @@ const postsBlog = [
       id: 3,
       title: "Las playas de España donde es más difícil aparcar en verano",
       image: "/mustang.jpg",
-      preview: "¿Vas a la playa en verano y tardas una gran cantidad de tiempo en aparcar? Te mostramos los mejores lugares donde dejar tu coche en las playas más concurridas de España...",
+      preview: "¿Vas a la playa en verano y pierdes horas dando vueltas para encontrar un sitio donde aparcar? Sabemos lo frustrante que puede ser llegar con ganas de disfrutar del mar y el sol, solo para encontrarte con calles abarrotadas y parkings llenos. Para ayudarte a aprovechar al máximo tus días de descanso, hemos preparado una guía con los mejores lugares donde dejar tu coche cerca de las playas más concurridas de España.",
       content: `
       <h4>2. Costa Brava: Aparcamientos Inteligentes</h4>
-          <p><strong>Duración:</strong> 1 día</p>
           <p><strong>Punto destacado:</strong> Lloret de Mar</p>
           <p>
             Domina el arte de encontrar estacionamiento en las playas más populares de Girona.
@@ -184,7 +178,6 @@ const postsBlog = [
           </p>
 
           <h4>3. Playa de Levante en Benidorm</h4>
-          <p><strong>Duración:</strong> 1 día</p>
           <p><strong>Puntos destacados:</strong> Zona de Poniente, Parking subterráneo, Área de La Cala</p>
           <p>
             Estrategias definitivas para aparcar sin perder tiempo en uno de los destinos más turísticos de España.
@@ -199,7 +192,6 @@ const postsBlog = [
           </p>
 
           <h4>4. Playa de Tarifa</h4>
-          <p><strong>Duración:</strong> 1 día</p>
           <p>
             Consejos para estacionar en la capital mundial del windsurf con máxima tranquilidad.
           </p>
@@ -210,7 +202,6 @@ const postsBlog = [
           </ul>
 
           <h4>5. Calas de Mallorca</h4>
-          <p><strong>Duración:</strong> 2 días</p>
           <p>
             Guía definitiva para encontrar los mejores espacios de estacionamiento en las islas Baleares.
           </p>
@@ -228,10 +219,10 @@ const postsBlog = [
             ¡Planifica tu viaje y disfruta del sol sin estrés!
           </p>
          <article>
-          <img src="/arnau.jpg" alt="Blogger de viajes" />
+          <img src="/ana.jpg" alt="Blogger de viajes" />
           <aside>
-              <p className="nombre-blogger">Arnau Muntaner</p>
-              <p className="descripcion-blogger">Experto en automoción.</p>
+              <p className="nombre-blogger">Ana Zaragoza</p>
+              <p className="descripcion-blogger">Jefa de Redacción</p>
           </aside>
         </article>
         </div>
@@ -241,7 +232,7 @@ const postsBlog = [
       id: 4,
       title: "Los coches de lujo más cómodos de 2024",
       image: "/rolls.jpeg",
-      preview: "Descubre los cinco modelos de lujo que marcan la diferencia en comfort y tecnología para este año...",
+      preview: "Descubre los cinco modelos de lujo que están marcando la pauta este año en cuanto a confort, tecnología y diseño vanguardista. Si eres amante de la conducción premium y buscas una experiencia única en carretera, no te puedes perder esta selección exclusiva de vehículos que combinan innovación tecnológica, materiales de primera calidad y un rendimiento excepcional.",
       content: `
           <h4>1. Mercedes-Benz S-Class: La Referencia en Confort</h4>
           <p><strong>Precio desde:</strong> 110.000€</p>
@@ -311,7 +302,7 @@ const postsBlog = [
               <img src="/arnau.jpg" alt="Blogger de viajes" />
               <aside>
                   <p>Arnau Muntaner</p>
-                  <p>Experto en automoción.</p>
+                  <p>Experto en automoción</p>
               </aside>
             </article>
         </div>

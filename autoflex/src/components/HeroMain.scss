@@ -3,24 +3,37 @@
 .hero-main {
     background-image: url('../../public/bmw-road.jpeg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
     margin-bottom: 14.5rem;
     position: relative;
+    @media screen and (max-width: 993px){
+        margin-bottom: 5rem;
+    }
 
     .container {
         position: absolute;
         top: 40%; 
         left: 50%;
-        transform: translate(-50%, -60%); 
+        transform: translate(-50%, -60%);
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 50%;
+        @media screen and (max-width: 993px){
+            max-width: 96%;
+        }
+        @media screen and (max-width: 1220px){
+            max-width: 70%;
+        }
 
         p {
             margin-bottom: 0;
             color: $white;
+            @media screen and (max-width: 993px){
+                font-size: 1.4rem;
+            }
         }
 
         h1 {

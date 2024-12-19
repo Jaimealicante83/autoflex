@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop"; 
 import Nav from './components/Nav';
 import HeroMain from './components/HeroMain';
 import Flota from './components/Flota';
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
   <Router>
+    <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />} /> {/* Ruta principal */}
           <Route path="/blog" element={<Blog />} /> {/* Ruta Blog */}

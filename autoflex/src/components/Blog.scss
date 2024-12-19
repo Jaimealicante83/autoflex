@@ -1,8 +1,10 @@
 @import '../styles/general.scss';
 .blog{
     height: auto;
+    background-color: rgb(240, 240, 240);
     .container{
         height: auto;
+        margin-bottom: 0;
         .banner-blog{
             display: flex;
             justify-content: center;
@@ -36,18 +38,31 @@
 
         .columns-wrapper{
             display: flex;
-            gap: 5%;
+            flex-direction: row;
+            gap: 4%;
+            @media screen and (max-width: 992px){
+                flex-direction: column;
+            }
             .container-post{
                 height: auto;
                 width: 65%;
+                @media screen and (max-width: 992px){
+                    width: 100%;
+                }
             }
             .barra-lateral{
                 height: auto;
                 width: 35%;
+                margin-top: 4rem;
+                @media screen and (max-width: 992px){
+                    width: 100%;
+                }
                 .post-preview{
+                    cursor: pointer;
                     img{
                         width: 100%;
                         margin-bottom: 0;
+                        border-radius: 1.5rem;
                     }
                   
                     h3 {
@@ -57,9 +72,11 @@
                     }
                   
                     h4 {
-                      margin-bottom: 1rem;
-                      font-size: 2.2rem;
-                      color: #333;
+                        margin-top: 1rem;
+                        margin-bottom: 0.3rem;
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                        color: #202020;
                     }
                   
                     p {
@@ -78,7 +95,42 @@
                   
                     strong {
                       font-weight: bold;
-                      color: #555;
+                      color: #171717;
+                    }
+                }
+                .box-call-to-action{
+                    background-color: $orange;
+                    padding: 4rem;
+                    border-radius: 1.5rem;
+                    h3{
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 2.8rem;
+                        margin-bottom: 1rem;
+                        color: $white;
+                        max-width: 70%;
+                    }
+                    p{
+                        color: $white;
+                        max-width: 90%;
+                        margin-bottom: 3rem;
+                    }
+                    .btn-white{
+                        font-weight: 700;
+                        background-color: $white;
+                        color: $orange;
+                        padding: 1rem 2rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                        cursor: pointer;
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                        border: .2rem solid $white;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            background-color: $orange;
+                            color: $white;
+                        }
                     }
                 }
             }

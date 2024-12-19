@@ -23,9 +23,15 @@
             img{
                 height: 4rem;
                 width: auto;
+                @media screen and (max-width: 992px){
+                    height: 3rem;
+                }
             }
         }
         .nav-wrapper{
+            @media screen and (max-width: 992px){
+                display: none;
+            }
             ul{
                 display: flex;
                 gap: 5rem;

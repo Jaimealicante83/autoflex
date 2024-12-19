@@ -1,6 +1,11 @@
 @import '../styles/general.scss';
 .post{
     width: 24%;
+    margin-bottom: 0;
+    @media screen and (max-width: 992px){
+        width: 100%;
+        margin-bottom: 5rem;
+    }
     img{
         width: 100%;
         height: auto;
@@ -11,6 +16,9 @@
     p{
         font-size: 1.4rem;
         line-height: 2.4rem;
+        @media screen and (max-width: 992px){
+            margin-bottom: 0;
+        }
     }
     .vermas-wrapper {
         display: flex;
@@ -21,6 +29,7 @@
             font-size: 1.6rem;
             font-weight: 700;
             color: $orange;
+            transition: color .3s ease-in-out;
         }
         img {
             height: 1rem;
@@ -29,6 +38,9 @@
         }
         &:hover img {
             transform: translateX(1rem); // Desplaza la imagen 1rem a la derecha
+        }
+        &:hover a {
+            color: $darkorange; // Desplaza la imagen 1rem a la derecha
         }
     }
 }
